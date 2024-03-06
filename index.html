@@ -111,57 +111,57 @@
             <th>周三下午</th>
         </tr>
         <tr class="student1">
-            <td>刘惠</td>
-            <td>监控室</td>
-            <td>监控室</td>
-            <td>监控室</td>
-            <td>监控室</td>
+            <td>熊高明</td>
             <td></td>
+            <td>2教监控</td>
+            <td></td>
+            <td>1-4系办</td>
+            <td>培训</td>
             <td></td>
         </tr>
         <tr class="student2">
-            <td>胡明亮</td>
-            <td>A410</td>
+            <td>周文彬</td>
+            <td></td>
             <td></td>
             <td>机房关机</td>
-            <td></td>
-            <td></td>
+            <td>培训</td>
+            <td>培训</td>
             <td></td>
         </tr>
         <tr class="student3">
-            <td>吴佳怡</td>
-            <td>C410</td>
+            <td>涂文乐</td>
+            <td></td>
             <td></td>
             <td>机房关机</td>
-            <td></td>
-            <td></td>
+            <td>培训</td>
+            <td>培训</td>
             <td></td>
         </tr>
         <tr class="student4">
             <td>张耀</td>
+            <td>2教监控</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>A410</td>
-            <td>A410</td>
+            <td>1-4系办</td>
+            <td>培训</td>
             <td>机房关机</td>
         </tr>
         <tr class="student5">
             <td>叶聪颖</td>
             <td></td>
-            <td>A410</td>
             <td></td>
-            <td>C410</td>
-            <td>C410</td>
+            <td></td>
+            <td>5-6系办</td>
+            <td>培训</td>
             <td>机房关机</td>
         </tr>
         <tr class="student6">
             <td>黄萱妍</td>
-            <td>系办保障</td>
-            <td>C410</td>
             <td></td>
-            <td>系办保障</td>
-            <td>系办保障</td>
+            <td></td>
+            <td></td>
+            <td>5-6系办</td>
+            <td>培训</td>
             <td></td>
         </tr>
     </table>
@@ -246,7 +246,7 @@
             }
 
             //8:10-10:14 12节
-            if (((hours == 8) && (minutes >= 00 && minutes <= 59)) || ((hours == 9) && (minutes >= 0 && minutes <= 59)) || ((hours == 10) && (minutes >= 0 && minutes <= 14))) {
+            if (((hours == 8) && (minutes >= 0 && minutes <= 59)) || ((hours == 9) && (minutes >= 0 && minutes <= 59)) || ((hours == 10) && (minutes >= 0 && minutes <= 14))) {
                 // console.log("8:10-9:59");
                 var RowTitle = document.querySelectorAll("th");
                 var Stu1 = document.querySelector(".student1").querySelectorAll("td");
@@ -371,46 +371,46 @@
             RowTitle[5].innerHTML = "周一78节";
             RowTitle[6].innerHTML = "周一下午";
 
-            Stu1[1].innerHTML = "监控室";
-            Stu1[2].innerHTML = "系办保障";
+            Stu1[1].innerHTML = "";
+            Stu1[2].innerHTML = "A410";
             Stu1[3].innerHTML = "";
-            Stu1[4].innerHTML = "系办保障";
-            Stu1[5].innerHTML = "监控室";
-            Stu1[6].innerHTML = "";
+            Stu1[4].innerHTML = "";
+            Stu1[5].innerHTML = "1教监控";
+            Stu1[6].innerHTML = "机房关机";
 
             Stu2[1].innerHTML = "";
             Stu2[2].innerHTML = "";
             Stu2[3].innerHTML = "机房关机";
-            Stu2[4].innerHTML = "A410";
+            Stu2[4].innerHTML = "C410";
             Stu2[5].innerHTML = "";
-            Stu2[6].innerHTML = "机房关机";
+            Stu2[6].innerHTML = "";
 
-            Stu3[1].innerHTML = "系办保障";
-            Stu3[2].innerHTML = "监控室";
-            Stu3[3].innerHTML = "监控室";
+            Stu3[1].innerHTML = "";
+            Stu3[2].innerHTML = "";
+            Stu3[3].innerHTML = "机房关机";
             Stu3[4].innerHTML = "";
             Stu3[5].innerHTML = "";
             Stu3[6].innerHTML = "";
 
             Stu4[1].innerHTML = "C410";
-            Stu4[2].innerHTML = "C410";
+            Stu4[2].innerHTML = "";
             Stu4[3].innerHTML = "";
             Stu4[4].innerHTML = "";
-            Stu4[5].innerHTML = "A410";
+            Stu4[5].innerHTML = "";
             Stu4[6].innerHTML = "机房关机";
 
-            Stu5[1].innerHTML = "A410";
-            Stu5[2].innerHTML = "A410";
+            Stu5[1].innerHTML = "1教监控";
+            Stu5[2].innerHTML = "";
             Stu5[3].innerHTML = "";
-            Stu5[4].innerHTML = "C410";
-            Stu5[5].innerHTML = "C410";
+            Stu5[4].innerHTML = "";
+            Stu5[5].innerHTML = "";
             Stu5[6].innerHTML = "";
 
-            Stu6[1].innerHTML = "";
+            Stu6[1].innerHTML = "2教监控";
             Stu6[2].innerHTML = "";
-            Stu6[3].innerHTML = "机房关机";
-            Stu6[4].innerHTML = "监控室";
-            Stu6[5].innerHTML = "系办保障";
+            Stu6[3].innerHTML = "";
+            Stu6[4].innerHTML = "";
+            Stu6[5].innerHTML = "";
             Stu6[6].innerHTML = "";
         }
 
@@ -433,44 +433,44 @@
             RowTitle[5].innerHTML = "周二78节";
             RowTitle[6].innerHTML = "周二下午";
 
-            Stu1[1].innerHTML = "监控室";
-            Stu1[2].innerHTML = "监控室";
-            Stu1[3].innerHTML = "监控室";
+            Stu1[1].innerHTML = "";
+            Stu1[2].innerHTML = "C410";
+            Stu1[3].innerHTML = "";
             Stu1[4].innerHTML = "";
-            Stu1[5].innerHTML = "监控室";
-            Stu1[6].innerHTML = "";
+            Stu1[5].innerHTML = "1教监控";
+            Stu1[6].innerHTML = "机房关机";
 
-            Stu2[1].innerHTML = "A410";
+            Stu2[1].innerHTML = "";
             Stu2[2].innerHTML = "";
             Stu2[3].innerHTML = "机房关机";
-            Stu2[4].innerHTML = "";
+            Stu2[4].innerHTML = "A410";
             Stu2[5].innerHTML = "";
-            Stu2[6].innerHTML = "机房关机";
+            Stu2[6].innerHTML = "";
 
-            Stu3[1].innerHTML = "";
+            Stu3[1].innerHTML = "A410";
             Stu3[2].innerHTML = "";
-            Stu3[3].innerHTML = "";
-            Stu3[4].innerHTML = "A410";
+            Stu3[3].innerHTML = "机房关机";
+            Stu3[4].innerHTML = "1教监控";
             Stu3[5].innerHTML = "";
-            Stu3[6].innerHTML = "机房关机";
+            Stu3[6].innerHTML = "";
 
-            Stu4[1].innerHTML = "C410";
-            Stu4[2].innerHTML = "C410";
+            Stu4[1].innerHTML = "2教监控";
+            Stu4[2].innerHTML = "";
             Stu4[3].innerHTML = "";
-            Stu4[4].innerHTML = "C410";
+            Stu4[4].innerHTML = "";
             Stu4[5].innerHTML = "";
-            Stu4[6].innerHTML = "";
+            Stu4[6].innerHTML = "机房关机";
 
             Stu5[1].innerHTML = "";
-            Stu5[2].innerHTML = "";
+            Stu5[2].innerHTML = "2教监控";
             Stu5[3].innerHTML = "";
-            Stu5[4].innerHTML = "监控室";
-            Stu5[5].innerHTML = "系办保障";
+            Stu5[4].innerHTML = "";
+            Stu5[5].innerHTML = "";
             Stu5[6].innerHTML = "";
 
             Stu6[1].innerHTML = "";
-            Stu6[2].innerHTML = "A410";
-            Stu6[3].innerHTML = "机房关机";
+            Stu6[2].innerHTML = "1教监控";
+            Stu6[3].innerHTML = "";
             Stu6[4].innerHTML = "";
             Stu6[5].innerHTML = "";
             Stu6[6].innerHTML = "";
@@ -495,46 +495,46 @@
             RowTitle[5].innerHTML = "周三78节";
             RowTitle[6].innerHTML = "周三下午";
 
-            Stu1[1].innerHTML = "监控室";
-            Stu1[2].innerHTML = "监控室";
-            Stu1[3].innerHTML = "监控室";
-            Stu1[4].innerHTML = "监控室";
-            Stu1[5].innerHTML = "";
+            Stu1[1].innerHTML = "";
+            Stu1[2].innerHTML = "2教监控";
+            Stu1[3].innerHTML = "";
+            Stu1[4].innerHTML = "1-4系办";
+            Stu1[5].innerHTML = "培训";
             Stu1[6].innerHTML = "";
 
-            Stu2[1].innerHTML = "A410";
+            Stu2[1].innerHTML = "";
             Stu2[2].innerHTML = "";
             Stu2[3].innerHTML = "机房关机";
-            Stu2[4].innerHTML = "";
-            Stu2[5].innerHTML = "";
+            Stu2[4].innerHTML = "培训";
+            Stu2[5].innerHTML = "培训";
             Stu2[6].innerHTML = "";
 
-            Stu3[1].innerHTML = "C410";
+            Stu3[1].innerHTML = "";
             Stu3[2].innerHTML = "";
             Stu3[3].innerHTML = "机房关机";
-            Stu3[4].innerHTML = "";
-            Stu3[5].innerHTML = "";
+            Stu3[4].innerHTML = "培训";
+            Stu3[5].innerHTML = "培训";
             Stu3[6].innerHTML = "";
 
-            Stu4[1].innerHTML = "";
+            Stu4[1].innerHTML = "2教监控";
             Stu4[2].innerHTML = "";
             Stu4[3].innerHTML = "";
-            Stu4[4].innerHTML = "A410";
-            Stu4[5].innerHTML = "A410";
+            Stu4[4].innerHTML = "1-4系办";
+            Stu4[5].innerHTML = "培训";
             Stu4[6].innerHTML = "机房关机";
 
             Stu5[1].innerHTML = "";
-            Stu5[2].innerHTML = "A410";
+            Stu5[2].innerHTML = "";
             Stu5[3].innerHTML = "";
-            Stu5[4].innerHTML = "C410";
-            Stu5[5].innerHTML = "C410";
+            Stu5[4].innerHTML = "5-6系办";
+            Stu5[5].innerHTML = "培训";
             Stu5[6].innerHTML = "机房关机";
 
-            Stu6[1].innerHTML = "系办保障";
-            Stu6[2].innerHTML = "C410";
+            Stu6[1].innerHTML = "";
+            Stu6[2].innerHTML = "";
             Stu6[3].innerHTML = "";
-            Stu6[4].innerHTML = "系办保障";
-            Stu6[5].innerHTML = "系办保障";
+            Stu6[4].innerHTML = "5-6系办";
+            Stu6[5].innerHTML = "培训";
             Stu6[6].innerHTML = "";
         }
 
@@ -557,47 +557,47 @@
             RowTitle[5].innerHTML = "周四78节";
             RowTitle[6].innerHTML = "周四下午";
 
-            Stu1[1].innerHTML = "监控室";
-            Stu1[2].innerHTML = "";
-            Stu1[3].innerHTML = "监控室";
-            Stu1[4].innerHTML = "监控室";
-            Stu1[5].innerHTML = "监控室";
+            Stu1[1].innerHTML = "";
+            Stu1[2].innerHTML = "1教监控";
+            Stu1[3].innerHTML = "";
+            Stu1[4].innerHTML = "";
+            Stu1[5].innerHTML = "";
             Stu1[6].innerHTML = "";
 
-            Stu2[1].innerHTML = "A410";
+            Stu2[1].innerHTML = "";
             Stu2[2].innerHTML = "";
-            Stu2[3].innerHTML = "";
+            Stu2[3].innerHTML = "机房关机";
             Stu2[4].innerHTML = "";
-            Stu2[5].innerHTML = "A410";
-            Stu2[6].innerHTML = "机房关机";
+            Stu2[5].innerHTML = "C410";
+            Stu2[6].innerHTML = "";
 
-            Stu3[1].innerHTML = "";
+            Stu3[1].innerHTML = "A410";
             Stu3[2].innerHTML = "";
             Stu3[3].innerHTML = "机房关机";
             Stu3[4].innerHTML = "";
-            Stu3[5].innerHTML = "系办保障";
+            Stu3[5].innerHTML = "A410";
             Stu3[6].innerHTML = "";
 
-            Stu4[1].innerHTML = "";
-            Stu4[2].innerHTML = "C410";
-            Stu4[3].innerHTML = "机房关机";
+            Stu4[1].innerHTML = "2教监控";
+            Stu4[2].innerHTML = "";
+            Stu4[3].innerHTML = "";
             Stu4[4].innerHTML = "";
-            Stu4[5].innerHTML = "C410";
-            Stu4[6].innerHTML = "机房关机";
+            Stu4[5].innerHTML = "";
+            Stu4[6].innerHTML = "";
 
-            Stu5[1].innerHTML = "系办保障";
-            Stu5[2].innerHTML = "监控室";
+            Stu5[1].innerHTML = "";
+            Stu5[2].innerHTML = "";
             Stu5[3].innerHTML = "";
-            Stu5[4].innerHTML = "A410";
+            Stu5[4].innerHTML = "";
             Stu5[5].innerHTML = "";
-            Stu5[6].innerHTML = "";
+            Stu5[6].innerHTML = "机房关机";
 
-            Stu6[1].innerHTML = "C410";
-            Stu6[2].innerHTML = "A410";
+            Stu6[1].innerHTML = "";
+            Stu6[2].innerHTML = "";
             Stu6[3].innerHTML = "";
-            Stu6[4].innerHTML = "C410";
+            Stu6[4].innerHTML = "";
             Stu6[5].innerHTML = "";
-            Stu6[6].innerHTML = "";
+            Stu6[6].innerHTML = "机房关机";
         }
 
         //周五
@@ -619,47 +619,47 @@
             RowTitle[5].innerHTML = "周五78节";
             RowTitle[6].innerHTML = "周五下午";
 
-            Stu1[1].innerHTML = "系办保障";
-            Stu1[2].innerHTML = "";
+            Stu1[1].innerHTML = "C410";
+            Stu1[2].innerHTML = "C410";
             Stu1[3].innerHTML = "";
-            Stu1[4].innerHTML = "系办保障";
-            Stu1[5].innerHTML = "系办保障";
+            Stu1[4].innerHTML = "";
+            Stu1[5].innerHTML = "2教监控";
             Stu1[6].innerHTML = "";
 
             Stu2[1].innerHTML = "";
             Stu2[2].innerHTML = "";
             Stu2[3].innerHTML = "机房关机";
-            Stu2[4].innerHTML = "A410";
-            Stu2[5].innerHTML = "A410";
-            Stu2[6].innerHTML = "机房关机";
+            Stu2[4].innerHTML = "";
+            Stu2[5].innerHTML = "";
+            Stu2[6].innerHTML = "";
 
             Stu3[1].innerHTML = "";
-            Stu3[2].innerHTML = "A410";
-            Stu3[3].innerHTML = "监控室";
-            Stu3[4].innerHTML = "C410";
-            Stu3[5].innerHTML = "C410";
-            Stu3[6].innerHTML = "机房关机";
+            Stu3[2].innerHTML = "";
+            Stu3[3].innerHTML = "机房关机";
+            Stu3[4].innerHTML = "";
+            Stu3[5].innerHTML = "";
+            Stu3[6].innerHTML = "";
 
-            Stu4[1].innerHTML = "A410";
+            Stu4[1].innerHTML = "";
             Stu4[2].innerHTML = "";
-            Stu4[3].innerHTML = "机房关机";
-            Stu4[4].innerHTML = "监控室";
-            Stu4[5].innerHTML = "";
+            Stu4[3].innerHTML = "";
+            Stu4[4].innerHTML = "";
+            Stu4[5].innerHTML = "1教监控";
             Stu4[6].innerHTML = "";
 
-            Stu5[1].innerHTML = "C410";
-            Stu5[2].innerHTML = "C410";
+            Stu5[1].innerHTML = "A410";
+            Stu5[2].innerHTML = "";
             Stu5[3].innerHTML = "";
             Stu5[4].innerHTML = "";
             Stu5[5].innerHTML = "";
-            Stu5[6].innerHTML = "";
+            Stu5[6].innerHTML = "机房关机";
 
-            Stu6[1].innerHTML = "监控室";
-            Stu6[2].innerHTML = "系办保障";
+            Stu6[1].innerHTML = "";
+            Stu6[2].innerHTML = "1教监控";
             Stu6[3].innerHTML = "";
-            Stu6[4].innerHTML = "";
+            Stu6[4].innerHTML = "2教监控";
             Stu6[5].innerHTML = "";
-            Stu6[6].innerHTML = "";
+            Stu6[6].innerHTML = "机房关机";
         }
 
         //周六
