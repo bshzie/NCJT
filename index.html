@@ -13,11 +13,19 @@
             margin: 0;
         }
 
+        .table-back {
+            margin: 5vw 15vw 0vw 15vw;
+            padding: 9px;
+            border-radius: 9px;
+            box-shadow: 1px 1px 16px rgb(226, 226, 226);
+        }
+
         /*表格样式*/
         table {
             /* margin-top: 50px; */
             width: 100%;
-            height: 400px;
+            height: 60vh;
+            /* height: 55vh; */
             background: #ccc;
             font-size: 12px;
             /* margin: 10px auto; */
@@ -67,15 +75,13 @@
 
         .lastBtn {
             float: left;
-
         }
 
         .nextBtn {
             float: right;
-
         }
 
-        .button {
+        /* .button {
             cursor: pointer;
             margin: 16px;
             width: 80px;
@@ -83,7 +89,6 @@
             color: #fff;
             text-align: center;
             line-height: 40px;
-            /* border-radius: 9px; */
             box-shadow: 1px 1px 3px gray;
             background-color: rgb(190, 190, 190);
             border: none;
@@ -93,82 +98,139 @@
         .button:hover {
             color: rgb(87, 87, 87);
             background-color: #fff;
+        } */
+
+        button {
+            margin-top: 60px;
+            width: fit-content;
+            min-width: 100px;
+            height: 50px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 2.5px solid #E0E1E4;
+            box-shadow: 0px 0px 20px -20px;
+            cursor: default;
+            background-color: white;
+            transition: all 0.2s ease-in-out 0ms;
+            user-select: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover {
+            background-color: #F2F2F2;
+            box-shadow: 0px 0px 20px -18px;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* 当屏幕宽度小于600px时 */
+        @media (max-width: 600px) {
+            .table-back {
+                margin: 0;
+                padding: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            table {
+                height: 400px;
+                /* height: 50vh; */
+            }
+
+            button {
+                width: 80px;
+                height: 46px;
+            }
+
+            .lastBtn {
+                margin: 15px;
+            }
+
+            .nextBtn {
+                margin: 15px;
+            }
+
         }
     </style>
 </head>
 
 <body>
-    <div class="shell">今 天 休 息 哦</div>
-    <table>
-        <tr>
-            <!-- th为表格标题栏-->
-            <th> </th>
-            <th>周三12节</th>
-            <th>周三34节</th>
-            <th>周三中午</th>
-            <th>周三56节</th>
-            <th>周三78节</th>
-            <th>周三下午</th>
-        </tr>
-        <tr class="student1">
-            <td>熊高明</td>
-            <td></td>
-            <td>2教监控</td>
-            <td></td>
-            <td>1-4系办</td>
-            <td>培训</td>
-            <td></td>
-        </tr>
-        <tr class="student2">
-            <td>周文彬</td>
-            <td></td>
-            <td></td>
-            <td>机房关机</td>
-            <td>培训</td>
-            <td>培训</td>
-            <td></td>
-        </tr>
-        <tr class="student3">
-            <td>涂文乐</td>
-            <td></td>
-            <td></td>
-            <td>机房关机</td>
-            <td>培训</td>
-            <td>培训</td>
-            <td></td>
-        </tr>
-        <tr class="student4">
-            <td>张耀</td>
-            <td>2教监控</td>
-            <td></td>
-            <td></td>
-            <td>1-4系办</td>
-            <td>培训</td>
-            <td>机房关机</td>
-        </tr>
-        <tr class="student5">
-            <td>叶聪颖</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>5-6系办</td>
-            <td>培训</td>
-            <td>机房关机</td>
-        </tr>
-        <tr class="student6">
-            <td>黄萱妍</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>5-6系办</td>
-            <td>培训</td>
-            <td></td>
-        </tr>
-    </table>
-    <!-- <div class="lastBtn button">上一张</div>
-    <div class="nextBtn button">下一张</div> -->
-    <button class="lastBtn button">上一张</button>
-    <button class="nextBtn button">下一张</button>
+    <div class="table-back">
+        <div class="shell">今 天 休 息 哦</div>
+        <table>
+            <tr>
+                <!-- th为表格标题栏-->
+                <th> </th>
+                <th>周三12节</th>
+                <th>周三34节</th>
+                <th>周三中午</th>
+                <th>周三56节</th>
+                <th>周三78节</th>
+                <th>周三下午</th>
+            </tr>
+            <tr class="student1">
+                <td>熊高明</td>
+                <td></td>
+                <td>2教监控</td>
+                <td></td>
+                <td>1-4系办</td>
+                <td>培训</td>
+                <td></td>
+            </tr>
+            <tr class="student2">
+                <td>周文彬</td>
+                <td></td>
+                <td></td>
+                <td>机房关机</td>
+                <td>培训</td>
+                <td>培训</td>
+                <td></td>
+            </tr>
+            <tr class="student3">
+                <td>涂文乐</td>
+                <td></td>
+                <td></td>
+                <td>机房关机</td>
+                <td>培训</td>
+                <td>培训</td>
+                <td></td>
+            </tr>
+            <tr class="student4">
+                <td>张耀</td>
+                <td>2教监控</td>
+                <td></td>
+                <td></td>
+                <td>1-4系办</td>
+                <td>培训</td>
+                <td>机房关机</td>
+            </tr>
+            <tr class="student5">
+                <td>叶聪颖</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5-6系办</td>
+                <td>培训</td>
+                <td>机房关机</td>
+            </tr>
+            <tr class="student6">
+                <td>黄萱妍</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5-6系办</td>
+                <td>培训</td>
+                <td></td>
+            </tr>
+        </table>
+        <!-- <div class="lastBtn button">上一张</div>
+        <div class="nextBtn button">下一张</div> -->
+        <button class="lastBtn button">上一张</button>
+        <button class="nextBtn button">下一张</button>
+    </div>
+
     <script>
         var nowPage = 0;
         // var TimeShow = document.querySelector(".shell");
@@ -195,7 +257,7 @@
                 case 5: week5(); break;
                 case 6: week6(); break;
                 case 0: week0(); break;
-                
+
             }
             clearInterval(timer1);
             // prompt(nowPage);
@@ -213,7 +275,7 @@
                 case 5: week5(); break;
                 case 6: week6(); break;
                 case 0: week0(); break;
-                
+
             }
             clearInterval(timer1);
         }
